@@ -39,7 +39,7 @@ namespace ProjetoPI
             try
             {
                 //Adiciona Dados
-                string result = conectar.Cadastrar(login.Text, senha.Text, "entrar"); ;
+                string result = conectar.Cadastrar(login.Text, senha.Text, nome.Text, unidade.Text, "entrar"); ;
                 MessageBox.Show(result);
             }
             catch (Exception erro)
@@ -53,6 +53,16 @@ namespace ProjetoPI
         {
             Application.Exit();
         }//Sair
+
+        private void nome_TextChanged(object sender, EventArgs e)
+        {
+
+        }//Nome
+
+        private void unidade_TextChanged(object sender, EventArgs e)
+        {
+
+        }//Unidade
 
     }//Fim da Classe
 }//Fim do Projeto

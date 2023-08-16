@@ -13,13 +13,17 @@ namespace ProjetoPI
 {
     public partial class Log : Form
     {
+        ADM co;
         DAO conec;
         Cadastrar cad;
+        Menu menu;
         public Log()
         {
             InitializeComponent();
             conec = new DAO();//Conecta a DAO
             cad = new Cadastrar();//Conecta a Cadastrar
+            co = new ADM();
+            menu = new Menu();
         }
 
         private void Log_Load(object sender, EventArgs e)
@@ -46,6 +50,7 @@ namespace ProjetoPI
                 {
                     MessageBox.Show("Login Bem sucedido");//Se der certo mostra essa mensagem 
                     this.Hide();
+                    menu.ShowDialog();
                 }
                 else
                 {
@@ -63,6 +68,11 @@ namespace ProjetoPI
         {
             Application.Exit();
         }//Sair
+
+        private void adm_Click(object sender, EventArgs e)
+        {
+            co.ShowDialog();
+        }//Adm 
 
     }//Fim da Classe
 }//Fim do Projeto

@@ -35,9 +35,9 @@ namespace ProjetoPI
             return contador;
         }//Fim do método Quantidade de Dados
 
-        public string Cadastrar(string login, string senha, string nomeTabela)
+        public string Cadastrar(string login, string senha, string nome, string unidade, string nomeTabela)
         {
-            string cadastrar = $"Insert into {nomeTabela}(login, senha) values('{login}','{senha}')";
+            string cadastrar = $"Insert into {nomeTabela}(login, senha, nome, unidade) values('{login}','{senha}','{nome}','{unidade}')";
             MySqlCommand sql = new MySqlCommand(cadastrar, conexao);
             string resultado = sql.ExecuteNonQuery() + " Executado";
             return resultado;

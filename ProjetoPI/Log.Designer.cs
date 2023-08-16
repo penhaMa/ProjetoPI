@@ -35,6 +35,7 @@
             this.senha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.sair = new System.Windows.Forms.Button();
+            this.adm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // entrar
@@ -108,11 +109,23 @@
             this.sair.UseVisualStyleBackColor = true;
             this.sair.Click += new System.EventHandler(this.sair_Click);
             // 
+            // adm
+            // 
+            this.adm.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adm.Location = new System.Drawing.Point(12, 393);
+            this.adm.Name = "adm";
+            this.adm.Size = new System.Drawing.Size(149, 45);
+            this.adm.TabIndex = 8;
+            this.adm.Text = "ADM";
+            this.adm.UseVisualStyleBackColor = true;
+            this.adm.Click += new System.EventHandler(this.adm_Click);
+            // 
             // Log
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.adm);
             this.Controls.Add(this.sair);
             this.Controls.Add(this.senha);
             this.Controls.Add(this.label2);
@@ -139,6 +152,7 @@
         private System.Windows.Forms.TextBox senha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button sair;
+        private System.Windows.Forms.Button adm;
     }
 }
 

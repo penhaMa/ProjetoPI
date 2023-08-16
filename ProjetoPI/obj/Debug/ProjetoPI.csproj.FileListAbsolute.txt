@@ -41,3 +41,6 @@ C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.csproj.CoreC
 C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.csproj.CopyComplete
 C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.exe
 C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.pdb
+C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.ADM.resources
+C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.Menu.resources
+C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.MenuAdm.resources
