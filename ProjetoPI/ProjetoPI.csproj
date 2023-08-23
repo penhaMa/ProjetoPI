@@ -176,8 +176,23 @@
     <EmbeddedResource Include="ADM.resx">
       <DependentUpon>ADM.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Atualizar.resx">
+      <DependentUpon>Atualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar.resx">
+      <DependentUpon>Buscar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarKit.resx">
+      <DependentUpon>CadastrarKit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devolucao.resx">
+      <DependentUpon>Devolucao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir.resx">
+      <DependentUpon>Excluir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log.resx">
       <DependentUpon>Log.cs</DependentUpon>
@@ -197,6 +212,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reservar.resx">
+      <DependentUpon>Reservar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Retirar.resx">
+      <DependentUpon>Retirar.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

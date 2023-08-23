@@ -44,3 +44,10 @@ C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.pdb
 C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.ADM.resources
 C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.Menu.resources
 C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.MenuAdm.resources
+C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.Atualizar.resources
+C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.Buscar.resources
+C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.CadastrarKit.resources
+C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.Devolucao.resources
+C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.Excluir.resources
+C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.Reservar.resources
+C:\Users\penha\source\repos\ProjetoPI\ProjetoPI\obj\Debug\ProjetoPI.Retirar.resources
