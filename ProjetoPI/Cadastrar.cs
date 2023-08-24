@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,10 +13,23 @@ namespace ProjetoPI
 {
     public partial class Cadastrar : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
+        private static extern IntPtr CreateRoundRectRgn
+    (
+            int nLeftRect,
+            int nTopRect,
+            int nRightRect,
+            int nBottomRect,
+            int nWidthEllipse,
+            int nHeighEllipse
+     );
+
         DAO conectar;
         public Cadastrar()
         {
             InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             conectar = new DAO();//Conecta com a DAO 
         }
 
@@ -41,6 +55,7 @@ namespace ProjetoPI
                 //Adiciona Dados
                 string result = conectar.Cadastrar(login.Text, senha.Text, nome.Text, unidade.Text, "entrar"); ;
                 MessageBox.Show(result);
+                this.Hide();
             }
             catch (Exception erro)
             {

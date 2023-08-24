@@ -39,9 +39,10 @@
             // senha
             // 
             this.senha.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.senha.Location = new System.Drawing.Point(305, 188);
+            this.senha.Location = new System.Drawing.Point(229, 153);
+            this.senha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.senha.Name = "senha";
-            this.senha.Size = new System.Drawing.Size(283, 42);
+            this.senha.Size = new System.Drawing.Size(213, 35);
             this.senha.TabIndex = 12;
             this.senha.TextChanged += new System.EventHandler(this.senha_TextChanged);
             // 
@@ -49,18 +50,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(212, 191);
+            this.label2.Location = new System.Drawing.Point(159, 155);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 35);
+            this.label2.Size = new System.Drawing.Size(70, 29);
             this.label2.TabIndex = 11;
             this.label2.Text = "Senha";
             // 
             // login
             // 
             this.login.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login.Location = new System.Drawing.Point(305, 135);
+            this.login.Location = new System.Drawing.Point(229, 110);
+            this.login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(283, 42);
+            this.login.Size = new System.Drawing.Size(213, 35);
             this.login.TabIndex = 9;
             this.login.TextChanged += new System.EventHandler(this.login_TextChanged);
             // 
@@ -68,47 +71,63 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(212, 138);
+            this.label1.Location = new System.Drawing.Point(159, 112);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 35);
+            this.label1.Size = new System.Drawing.Size(61, 29);
             this.label1.TabIndex = 8;
             this.label1.Text = "Login";
             // 
             // entrar
             // 
-            this.entrar.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.entrar.Location = new System.Drawing.Point(335, 274);
+            this.entrar.BackColor = System.Drawing.Color.MediumBlue;
+            this.entrar.FlatAppearance.BorderSize = 0;
+            this.entrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.entrar.Font = new System.Drawing.Font("SansSerif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.entrar.ForeColor = System.Drawing.Color.Transparent;
+            this.entrar.Location = new System.Drawing.Point(251, 223);
+            this.entrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.entrar.Name = "entrar";
-            this.entrar.Size = new System.Drawing.Size(149, 45);
+            this.entrar.Size = new System.Drawing.Size(112, 37);
             this.entrar.TabIndex = 7;
             this.entrar.Text = "ENTRAR";
-            this.entrar.UseVisualStyleBackColor = true;
+            this.entrar.UseVisualStyleBackColor = false;
             this.entrar.Click += new System.EventHandler(this.entrar_Click);
             // 
             // sair
             // 
-            this.sair.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sair.Location = new System.Drawing.Point(684, 394);
+            this.sair.BackColor = System.Drawing.Color.MediumBlue;
+            this.sair.FlatAppearance.BorderSize = 0;
+            this.sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sair.Font = new System.Drawing.Font("SansSerif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.sair.ForeColor = System.Drawing.Color.Transparent;
+            this.sair.Location = new System.Drawing.Point(513, 320);
+            this.sair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sair.Name = "sair";
-            this.sair.Size = new System.Drawing.Size(104, 44);
+            this.sair.Size = new System.Drawing.Size(78, 36);
             this.sair.TabIndex = 13;
             this.sair.Text = "SAIR";
-            this.sair.UseVisualStyleBackColor = true;
+            this.sair.UseVisualStyleBackColor = false;
             this.sair.Click += new System.EventHandler(this.sair_Click);
             // 
             // ADM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Orange;
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.sair);
             this.Controls.Add(this.senha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.login);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.entrar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ADM";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADM";
+            this.Load += new System.EventHandler(this.ADM_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

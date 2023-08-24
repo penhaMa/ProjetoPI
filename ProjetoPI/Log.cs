@@ -8,11 +8,24 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace ProjetoPI
 {
     public partial class Log : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
+        private static extern IntPtr CreateRoundRectRgn
+    (
+            int nLeftRect,
+            int nTopRect,
+            int nRightRect,
+            int nBottomRect,
+            int nWidthEllipse,
+            int nHeighEllipse
+    );
+
         ADM co;
         DAO conec;
         Cadastrar cad;
@@ -20,6 +33,7 @@ namespace ProjetoPI
         public Log()
         {
             InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             conec = new DAO();//Conecta a DAO
             cad = new Cadastrar();//Conecta a Cadastrar
             co = new ADM();
@@ -71,6 +85,7 @@ namespace ProjetoPI
 
         private void adm_Click(object sender, EventArgs e)
         {
+            this.Hide();
             co.ShowDialog();
         }//Adm 
 
